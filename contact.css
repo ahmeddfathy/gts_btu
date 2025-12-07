@@ -229,12 +229,12 @@
     }
     
     .hero-circle {
-        width: 250px;
-        height: 250px;
+        width: 500px;
+        height: 500px;
     }
     
     .main-hero-img-icon {
-        font-size: 120px;
+        font-size: 240px;
     }
 }
 

@@ -866,13 +866,13 @@
             }
 
             .hero-circle {
-                width: 100px;
-                height: 100px;
+                width: 200px;
+                height: 200px;
             }
 
             .main-hero-img {
-                max-width: 120px;
-                height: 120px;
+                max-width: 240px;
+                height: 240px;
             }
 
             .hero-img-wrapper {
