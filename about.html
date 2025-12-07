@@ -1,0 +1,475 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>About Us - BSU Tech Graduate Tracking System</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Cairo:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="about.css">
+</head>
+<body>
+    <!-- Navbar -->
+    <nav class="navbar navbar-expand-lg fixed-top">
+        <div class="container">
+            <a class="navbar-brand" href="index.html">
+                <span class="brand-bsu">BSU</span><span class="brand-tech">Tech</span><span class="brand-dot">.</span>
+            </a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav mx-auto">
+                    <li class="nav-item"><a class="nav-link" href="index.html">Home</a></li>
+                    <li class="nav-item"><a class="nav-link" href="jobs.html">Jobs</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#">Graduates</a></li>
+                    <li class="nav-item"><a class="nav-link" href="companies.html">Companies</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#">Specializations</a></li>
+                    <li class="nav-item"><a class="nav-link active" href="about.html">About Us</a></li>
+                    <li class="nav-item"><a class="nav-link" href="contact.html">Contact Us</a></li>
+                </ul>
+                <div class="nav-buttons">
+                    <a href="#" class="btn btn-outline-primary me-2">Sign In</a>
+                    <a href="#" class="btn btn-primary">Join Now</a>
+                </div>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section class="hero-section">
+        <div class="container">
+            <div class="row align-items-center">
+                <div class="col-lg-6">
+                    <div class="hero-content">
+                        <!-- Text Decorative Shapes -->
+                        <div class="text-shape text-shape-1"></div>
+                        <div class="text-shape text-shape-2"></div>
+                        <div class="text-shape text-shape-3"></div>
+                        
+                        <h1 class="hero-title">
+                            About <span class="text-gradient">BSU Tech</span>
+                        </h1>
+                        <p class="hero-description">
+                            A comprehensive Graduate Tracking System designed to bridge the gap between Beni Suef Technological University graduates and leading companies in the technology and engineering sectors.
+                        </p>
+                        <div class="hero-buttons">
+                            <a href="#platform-overview" class="btn btn-primary btn-lg">Learn More</a>
+                            <a href="contact.html" class="btn btn-outline-dark btn-lg">Contact Us</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-6">
+                    <div class="hero-image">
+                        <div class="hero-img-wrapper">
+                            <div class="hero-circle"></div>
+                            <img src="images/About-Us.png" alt="About BSU Tech" class="main-hero-img">
+                            <div class="hero-dots dot-1"></div>
+                            <div class="hero-dots dot-2"></div>
+                            <div class="hero-dots dot-3"></div>
+                            <!-- Decorative Shapes -->
+                            <div class="hero-shape shape-top-left"></div>
+                            <div class="hero-shape shape-bottom-right"></div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Platform Overview Section -->
+    <section id="platform-overview" class="platform-overview-section">
+        <div class="container">
+            <div class="section-header text-center">
+                <span class="section-badge">Our Platform</span>
+                <h2 class="section-title">Graduate Tracking <span class="text-gradient">System</span></h2>
+                <p class="section-desc">A comprehensive solution that connects graduates, companies, and the university</p>
+            </div>
+            
+            <div class="platform-content">
+                <div class="row align-items-center">
+                    <div class="col-lg-6">
+                        <div class="platform-image">
+                            <img src="images/university-building.png" alt="Platform Overview" class="img-fluid rounded-4">
+                        </div>
+                    </div>
+                    <div class="col-lg-6">
+                        <div class="platform-info">
+                            <h3>Bridging the Gap Between Education and Industry</h3>
+                            <p>BSU Tech is a state-of-the-art Graduate Tracking System designed specifically for Beni Suef Technological University. Our platform serves as a comprehensive ecosystem that connects talented graduates with leading companies in technology and engineering fields.</p>
+                            <p>Through our system, the university can effectively monitor graduate career progress, companies can discover exceptional talent, and graduates can access exclusive job opportunities and training programs tailored to their specializations.</p>
+                            <p>Our mission is to enhance graduate employability, strengthen industry-academia relationships, and contribute to the technological advancement of Egypt by ensuring that the skills acquired at the university translate directly into successful careers.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Features Section -->
+    <section class="features-section">
+        <div class="container">
+            <div class="section-header text-center">
+                <span class="section-badge">Features</span>
+                <h2 class="section-title">Platform <span class="text-gradient">Features</span></h2>
+                <p class="section-desc">Comprehensive tools designed for graduates, companies, and the university</p>
+            </div>
+            
+            <div class="features-tabs">
+                <div class="filter-buttons justify-content-center mb-5" id="featuresTabs" role="tablist">
+                    <button class="filter-btn active" id="graduates-tab" data-bs-toggle="pill" data-bs-target="#graduates" type="button" role="tab">For Graduates</button>
+                    <button class="filter-btn" id="companies-tab" data-bs-toggle="pill" data-bs-target="#companies" type="button" role="tab">For Companies</button>
+                    <button class="filter-btn" id="university-tab" data-bs-toggle="pill" data-bs-target="#university" type="button" role="tab">For University</button>
+                </div>
+                
+                <div class="tab-content" id="featuresTabsContent">
+                    <!-- Graduates Tab -->
+                    <div class="tab-pane fade show active" id="graduates" role="tabpanel">
+                        <div class="row g-4">
+                            <div class="col-lg-4 col-md-6">
+                                <div class="feature-card">
+                                    <div class="feature-icon">
+                                        <i class="fas fa-user-graduate"></i>
+                                    </div>
+                                    <h4>Professional Profile</h4>
+                                    <p>Create a comprehensive profile showcasing your skills, projects, and academic achievements to stand out to potential employers.</p>
+                                </div>
+                            </div>
+                            <div class="col-lg-4 col-md-6">
+                                <div class="feature-card">
+                                    <div class="feature-icon">
+                                        <i class="fas fa-briefcase"></i>
+                                    </div>
+                                    <h4>Job Opportunities</h4>
+                                    <p>Access exclusive job postings from top companies specifically looking for Beni Suef Technological University graduates.</p>
+                                </div>
+                            </div>
+                            <div class="col-lg-4 col-md-6">
+                                <div class="feature-card">
+                                    <div class="feature-icon">
+                                        <i class="fas fa-graduation-cap"></i>
+                                    </div>
+                                    <h4>Training Programs</h4>
+                                    <p>Discover specialized training programs to enhance your skills and increase your employability in competitive fields.</p>
+                                </div>
+                            </div>
+                            <div class="col-lg-4 col-md-6">
+                                <div class="feature-card">
+                                    <div class="feature-icon">
+                                        <i class="fas fa-chart-line"></i>
+                                    </div>
+                                    <h4>Career Analytics</h4>
+                                    <p>Track your job applications, interview requests, and receive insights on your career progress and market demand.</p>
+                                </div>
+                            </div>
+                            <div class="col-lg-4 col-md-6">
+                                <div class="feature-card">
+                                    <div class="feature-icon">
+                                        <i class="fas fa-users"></i>
+                                    </div>
+                                    <h4>Alumni Network</h4>
+                                    <p>Connect with fellow graduates and alumni to share experiences, opportunities, and professional advice.</p>
+                                </div>
+                            </div>
+                            <div class="col-lg-4 col-md-6">
+                                <div class="feature-card">
+                                    <div class="feature-icon">
+                                        <i class="fas fa-certificate"></i>
+                                    </div>
+                                    <h4>Certification Verification</h4>
+                                    <p>Have your academic and professional certifications verified by the university to increase credibility with employers.</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <!-- Companies Tab -->
+                    <div class="tab-pane fade" id="companies" role="tabpanel">
+                        <div class="row g-4">
+                            <div class="col-lg-4 col-md-6">
+                                <div class="feature-card">
+                                    <div class="feature-icon">
+                                        <i class="fas fa-search"></i>
+                                    </div>
+                                    <h4>Talent Search</h4>
+                                    <p>Search our database of qualified graduates using advanced filters to find candidates that match your specific requirements.</p>
+                                </div>
+                            </div>
+                            <div class="col-lg-4 col-md-6">
+                                <div class="feature-card">
+                                    <div class="feature-icon">
+                                        <i class="fas fa-bullhorn"></i>
+                                    </div>
+                                    <h4>Job Postings</h4>
+                                    <p>Post job openings and training opportunities directly to a targeted audience of skilled graduates in relevant specializations.</p>
+                                </div>
+                            </div>
+                            <div class="col-lg-4 col-md-6">
+                                <div class="feature-card">
+                                    <div class="feature-icon">
+                                        <i class="fas fa-calendar-check"></i>
+                                    </div>
+                                    <h4>Recruitment Events</h4>
+                                    <p>Organize and promote recruitment events, career fairs, and company information sessions to engage with potential candidates.</p>
+                                </div>
+                            </div>
+                            <div class="col-lg-4 col-md-6">
+                                <div class="feature-card">
+                                    <div class="feature-icon">
+                                        <i class="fas fa-handshake"></i>
+                                    </div>
+                                    <h4>University Partnerships</h4>
+                                    <p>Establish direct partnerships with the university to collaborate on curriculum development and specialized training programs.</p>
+                                </div>
+                            </div>
+                            <div class="col-lg-4 col-md-6">
+                                <div class="feature-card">
+                                    <div class="feature-icon">
+                                        <i class="fas fa-chart-bar"></i>
+                                    </div>
+                                    <h4>Analytics Dashboard</h4>
+                                    <p>Access comprehensive analytics on candidate engagement, application rates, and recruitment metrics to optimize your hiring strategy.</p>
+                                </div>
+                            </div>
+                            <div class="col-lg-4 col-md-6">
+                                <div class="feature-card">
+                                    <div class="feature-icon">
+                                        <i class="fas fa-clipboard-check"></i>
+                                    </div>
+                                    <h4>Application Management</h4>
+                                    <p>Streamline your recruitment process with our integrated application management system that tracks candidates through every stage.</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <!-- University Tab -->
+                    <div class="tab-pane fade" id="university" role="tabpanel">
+                        <div class="row g-4">
+                            <div class="col-lg-4 col-md-6">
+                                <div class="feature-card">
+                                    <div class="feature-icon">
+                                        <i class="fas fa-database"></i>
+                                    </div>
+                                    <h4>Graduate Database</h4>
+                                    <p>Maintain a comprehensive database of all graduates with their academic records, skills, and career progression.</p>
+                                </div>
+                            </div>
+                            <div class="col-lg-4 col-md-6">
+                                <div class="feature-card">
+                                    <div class="feature-icon">
+                                        <i class="fas fa-chart-pie"></i>
+                                    </div>
+                                    <h4>Employment Statistics</h4>
+                                    <p>Access real-time statistics on graduate employment rates, salary trends, and industry distribution for institutional reporting.</p>
+                                </div>
+                            </div>
+                            <div class="col-lg-4 col-md-6">
+                                <div class="feature-card">
+                                    <div class="feature-icon">
+                                        <i class="fas fa-comments"></i>
+                                    </div>
+                                    <h4>Alumni Communication</h4>
+                                    <p>Communicate with graduates through targeted messaging, surveys, and event invitations to maintain strong alumni relations.</p>
+                                </div>
+                            </div>
+                            <div class="col-lg-4 col-md-6">
+                                <div class="feature-card">
+                                    <div class="feature-icon">
+                                        <i class="fas fa-lightbulb"></i>
+                                    </div>
+                                    <h4>Curriculum Feedback</h4>
+                                    <p>Gather valuable feedback from graduates and employers to continuously improve academic programs and curricula.</p>
+                                </div>
+                            </div>
+                            <div class="col-lg-4 col-md-6">
+                                <div class="feature-card">
+                                    <div class="feature-icon">
+                                        <i class="fas fa-award"></i>
+                                    </div>
+                                    <h4>Success Stories</h4>
+                                    <p>Track and showcase graduate achievements and success stories to enhance the university's reputation and attract prospective students.</p>
+                                </div>
+                            </div>
+                            <div class="col-lg-4 col-md-6">
+                                <div class="feature-card">
+                                    <div class="feature-icon">
+                                        <i class="fas fa-file-alt"></i>
+                                    </div>
+                                    <h4>Accreditation Reports</h4>
+                                    <p>Generate comprehensive reports for accreditation purposes that demonstrate graduate outcomes and program effectiveness.</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- How It Works Section -->
+    <section class="how-it-works-section">
+        <div class="container">
+            <div class="section-header text-center">
+                <span class="section-badge">Process</span>
+                <h2 class="section-title">How It <span class="text-gradient">Works</span></h2>
+                <p class="section-desc">Simple steps to get started with BSU Tech Graduate Tracking System</p>
+            </div>
+            
+            <div class="process-timeline">
+                <div class="row process-steps">
+                    <div class="col-lg-4 process-step">
+                        <div class="step-number">1</div>
+                        <div class="step-content">
+                            <h3>Registration</h3>
+                            <p>Graduates create a detailed profile, companies register their organization, and the university sets up administrative access.</p>
+                        </div>
+                    </div>
+                    <div class="col-lg-4 process-step">
+                        <div class="step-number">2</div>
+                        <div class="step-content">
+                            <h3>Profile Building</h3>
+                            <p>Graduates showcase their skills and experience, while companies highlight their culture and available opportunities.</p>
+                        </div>
+                    </div>
+                    <div class="col-lg-4 process-step">
+                        <div class="step-number">3</div>
+                        <div class="step-content">
+                            <h3>Connection</h3>
+                            <p>Companies discover and connect with qualified graduates, while graduates apply for relevant positions and training programs.</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="row process-steps">
+                    <div class="col-lg-4 process-step">
+                        <div class="step-number">4</div>
+                        <div class="step-content">
+                            <h3>Engagement</h3>
+                            <p>Interviews are scheduled, skills assessments are conducted, and recruitment events are organized.</p>
+                        </div>
+                    </div>
+                    <div class="col-lg-4 process-step">
+                        <div class="step-number">5</div>
+                        <div class="step-content">
+                            <h3>Hiring & Tracking</h3>
+                            <p>Successful candidates are hired, and the university tracks graduate employment outcomes for institutional improvement.</p>
+                        </div>
+                    </div>
+                    <div class="col-lg-4 process-step">
+                        <div class="step-number">6</div>
+                        <div class="step-content">
+                            <h3>Growth & Development</h3>
+                            <p>Ongoing professional development opportunities are provided, and career progression is monitored for long-term success.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Mission & Vision Section -->
+    <section class="mission-vision-section">
+        <div class="container">
+            <div class="row g-4">
+                <div class="col-lg-6">
+                    <div class="mission-vision-card">
+                        <div class="card-icon">
+                            <i class="fas fa-bullseye"></i>
+                        </div>
+                        <h3>Our Mission</h3>
+                        <p>To create a seamless bridge between Beni Suef Technological University graduates and the technology industry by providing a comprehensive platform that facilitates meaningful connections, enhances employability, and tracks career progression.</p>
+                        <p>We strive to empower graduates with opportunities that match their skills and aspirations while enabling companies to discover exceptional talent that drives innovation and growth.</p>
+                    </div>
+                </div>
+                <div class="col-lg-6">
+                    <div class="mission-vision-card">
+                        <div class="card-icon">
+                            <i class="fas fa-eye"></i>
+                        </div>
+                        <h3>Our Vision</h3>
+                        <p>To become the leading Graduate Tracking System in Egypt, setting the standard for university-industry collaboration and serving as a model for other institutions seeking to enhance graduate outcomes.</p>
+                        <p>We envision a future where every Beni Suef Technological University graduate achieves their full career potential, contributing significantly to Egypt's technological advancement and economic development.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- CTA Section -->
+    <section class="cta-section">
+        <div class="container">
+            <div class="cta-wrapper">
+                <div class="row align-items-center">
+                    <div class="col-lg-8">
+                        <h2>Join BSU Tech Graduate Tracking System Today</h2>
+                        <p>Whether you're a graduate seeking opportunities, a company looking for talent, or a university administrator tracking success, our platform has the tools you need.</p>
+                    </div>
+                    <div class="col-lg-4 text-lg-end">
+                        <a href="#" class="btn btn-light btn-lg">Get Started <i class="fas fa-arrow-right"></i></a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-4 mb-4">
+                    <a class="footer-brand" href="index.html">
+                        <span class="brand-bsu">BSU</span><span class="brand-tech">Tech</span><span class="brand-dot">.</span>
+                    </a>
+                    <p class="footer-desc">Beni Suef Technological University Graduate Tracking System - Connecting graduates with opportunities and tracking career success</p>
+                    <div class="social-links">
+                        <a href="#"><i class="fab fa-facebook-f"></i></a>
+                        <a href="#"><i class="fab fa-twitter"></i></a>
+                        <a href="#"><i class="fab fa-linkedin-in"></i></a>
+                        <a href="#"><i class="fab fa-instagram"></i></a>
+                    </div>
+                </div>
+                <div class="col-lg-2 col-md-4 mb-4">
+                    <h5>Quick Links</h5>
+                    <ul class="footer-links">
+                        <li><a href="index.html">Home</a></li>
+                        <li><a href="jobs.html">Jobs</a></li>
+                        <li><a href="#">Graduates</a></li>
+                        <li><a href="companies.html">Companies</a></li>
+                        <li><a href="#">Specializations</a></li>
+                        <li><a href="about.html">About Us</a></li>
+                        <li><a href="contact.html">Contact Us</a></li>
+                    </ul>
+                </div>
+                <div class="col-lg-2 col-md-4 mb-4">
+                    <h5>Resources</h5>
+                    <ul class="footer-links">
+                        <li><a href="#">User Guide</a></li>
+                        <li><a href="#">FAQ</a></li>
+                        <li><a href="#">Blog</a></li>
+                        <li><a href="#">Success Stories</a></li>
+                        <li><a href="#">Privacy Policy</a></li>
+                        <li><a href="#">Terms of Service</a></li>
+                    </ul>
+                </div>
+                <div class="col-lg-4 col-md-4 mb-4">
+                    <h5>Contact Us</h5>
+                    <ul class="footer-contact">
+                        <li><i class="fas fa-map-marker-alt"></i> Beni Suef Technological University, Beni Suef, Egypt</li>
+                        <li><i class="fas fa-phone"></i> +20 123 456 7890</li>
+                        <li><i class="fas fa-envelope"></i> info@bsutech.edu.eg</li>
+                    </ul>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2025 BSU Tech Graduate Tracking System. All rights reserved by Beni Suef Technological University</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="script.js"></script>
+    <script src="about.js"></script>
+</body>
+</html>
